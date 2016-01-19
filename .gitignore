@@ -1,5 +1,6 @@
 ### Xcode ###
 build/
+Resources/Fonts/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
