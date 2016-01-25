@@ -39,6 +39,7 @@
 		ED8746561C5019E400B26BFE /* ProximaNovaCond-ThinIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */; };
 		ED8746571C5019E400B26BFE /* ProximaNovaCond-Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */; };
 		ED8746581C5019E400B26BFE /* ProximaNovaCond-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */; };
+		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
 		EDFDF0221C2D04B5002B4AF9 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF0211C2D04B5002B4AF9 /* MMViewController.swift */; };
 		EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
 		ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
 		ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
+		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
 		EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFDF0211C2D04B5002B4AF9 /* MMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */,
 				EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */,
 				EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */,
+				ED87465C1C56A57000B26BFE /* MMeshButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFDF0221C2D04B5002B4AF9 /* MMViewController.swift in Sources */,
+				ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
