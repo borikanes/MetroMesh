@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -113,15 +114,15 @@
                                 <exclude reference="myw-T8-pNi"/>
                                 <exclude reference="p7X-nJ-Sry"/>
                                 <exclude reference="pwq-kV-Bf3"/>
+                                <exclude reference="SG9-E9-ykv"/>
+                                <exclude reference="Sah-7e-LvU"/>
+                                <exclude reference="FpP-Of-nf8"/>
+                                <exclude reference="nLN-f8-fTl"/>
                                 <exclude reference="6r1-Zv-wJ0"/>
                                 <exclude reference="G4J-Kj-W9z"/>
                                 <exclude reference="W9d-Pr-SAY"/>
                                 <exclude reference="bNY-AW-7tS"/>
                                 <exclude reference="gEd-8j-GdS"/>
-                                <exclude reference="FpP-Of-nf8"/>
-                                <exclude reference="nLN-f8-fTl"/>
-                                <exclude reference="SG9-E9-ykv"/>
-                                <exclude reference="Sah-7e-LvU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -157,10 +158,10 @@
                                 <include reference="QpW-MW-x7w"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FpP-Of-nf8"/>
-                                <include reference="nLN-f8-fTl"/>
                                 <include reference="SG9-E9-ykv"/>
                                 <include reference="Sah-7e-LvU"/>
+                                <include reference="FpP-Of-nf8"/>
+                                <include reference="nLN-f8-fTl"/>
                             </mask>
                         </variation>
                     </view>
