@@ -45,9 +45,9 @@ class MMeshButton: UIButton {
             buttonSpreadView.center = location
             buttonSpreadView.layer.cornerRadius = 22.0
             buttonSpreadView.layer.zPosition = -1000
-            buttonSpreadView.backgroundColor = UIColor(red: 144.0/255.0, green: 177.0/255.0, blue: 199.0/255.0, alpha: 1.0)
+            buttonSpreadView.backgroundColor = UIColor(red: 186.0/255.0, green: 193.0/255.0, blue: 241.0/255.0, alpha: 0.09)
             addSubview(buttonSpreadView)
-            UIView.animateWithDuration(0.75, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            UIView.animateWithDuration(0.75, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                 () -> Void in
                 let (centerX, centerY) = (self.buttonSpreadView.center.x, self.buttonSpreadView.center.y)
                 let scaleFactor = sqrt(pow(self.frame.size.width - centerX, 2.0) + pow(self.frame.size.height - centerY, 2.0))
