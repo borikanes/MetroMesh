@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED761E261C7064E30035AFB0 /* TextFieldEffects in Resources */ = {isa = PBXBuildFile; fileRef = ED761E251C7064E30035AFB0 /* TextFieldEffects */; };
 		ED8746391C5019DA00B26BFE /* proxima-nova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E091C2F64620064DC86 /* proxima-nova.ttf */; };
 		ED87463A1C5019DE00B26BFE /* proxima-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0A1C2F64620064DC86 /* proxima-sans-medium.ttf */; };
 		ED87463B1C5019E400B26BFE /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0B1C2F64620064DC86 /* ProximaNova-Black.otf */; };
@@ -81,6 +82,7 @@
 		ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
 		ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
 		ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
+		ED761E251C7064E30035AFB0 /* TextFieldEffects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TextFieldEffects; sourceTree = "<group>"; };
 		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
 		EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */ = {
 			isa = PBXGroup;
 			children = (
+				ED761E251C7064E30035AFB0 /* TextFieldEffects */,
 				ED87465B1C501BDE00B26BFE /* Supporting Files */,
 				ED87465A1C501BC700B26BFE /* Controller */,
 				ED8746591C501BA300B26BFE /* View */,
@@ -282,6 +285,7 @@
 				ED87464B1C5019E400B26BFE /* ProximaNovaCond-Black.otf in Resources */,
 				ED8746511C5019E400B26BFE /* ProximaNovaCond-Reg.otf in Resources */,
 				ED8746531C5019E400B26BFE /* ProximaNovaCond-Sbold.otf in Resources */,
+				ED761E261C7064E30035AFB0 /* TextFieldEffects in Resources */,
 				EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */,
 				ED8746521C5019E400B26BFE /* ProximaNovaCond-RegIt.otf in Resources */,
 				ED8746541C5019E400B26BFE /* ProximaNovaCond-SboldIt.otf in Resources */,

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="ProximaNova-Reg.otf">
+        <mutableArray key="ProximaNova-Regular.ttf">
             <string>ProximaNova-Regular</string>
         </mutableArray>
     </customFonts>
@@ -22,14 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dlo-Cn-nQd">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="178" width="327" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdw-7x-Xlu" customClass="MMeshButton" customModule="MetroMesh" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.19997623562812805" green="0.23911768198013306" blue="0.59742558002471924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,18 +38,25 @@
                                     <rect key="frame" x="82" y="403" width="236" height="51"/>
                                 </variation>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-KX-VbF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="210" width="360" height="49"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.24854066967964172" green="0.70529741048812866" blue="0.79811722040176392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Dlo-Cn-nQd"/>
                                 <exclude reference="Hdw-7x-Xlu"/>
+                                <exclude reference="EFn-KX-VbF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Dlo-Cn-nQd"/>
                                 <include reference="Hdw-7x-Xlu"/>
+                                <include reference="EFn-KX-VbF"/>
                             </mask>
                         </variation>
                     </view>
