@@ -250,6 +250,7 @@
 					EDFDF01B1C2D04B5002B4AF9 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 6N2N6264T3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -443,6 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -457,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
