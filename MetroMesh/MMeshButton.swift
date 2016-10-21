@@ -35,43 +35,43 @@ class MMeshButton: UIButton {
         self.backgroundColor = UIColor(red: 52.0/255.0, green: 64.0/255.0, blue: 150.0/255.0, alpha: 1.0)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesBegan(touches, withEvent: event)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         
         for touch in touches as Set<UITouch> {
-            let location = touch.locationInView(self)
+            let location = touch.location(in: self)
 
-            buttonSpreadView.frame = CGRectMake(0.0, 0.0, 20.0, 20.0)
+            buttonSpreadView.frame = CGRect(x: 0.0, y: 0.0, width: 20.0, height: 20.0)
             buttonSpreadView.center = location
             buttonSpreadView.layer.cornerRadius = 22.0
             buttonSpreadView.layer.zPosition = -1000
             buttonSpreadView.backgroundColor = UIColor(red: 186.0/255.0, green: 193.0/255.0, blue: 241.0/255.0, alpha: 0.09)
             addSubview(buttonSpreadView)
-            UIView.animateWithDuration(0.75, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            UIView.animate(withDuration: 0.75, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
                 () -> Void in
                 let (centerX, centerY) = (self.buttonSpreadView.center.x, self.buttonSpreadView.center.y)
                 let scaleFactor = sqrt(pow(self.frame.size.width - centerX, 2.0) + pow(self.frame.size.height - centerY, 2.0))
-                self.buttonSpreadView.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor)
+                self.buttonSpreadView.transform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
                 }, completion: nil)
         }
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         
-        UIView.animateWithDuration(0.25, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-            self.buttonSpreadView.transform = CGAffineTransformIdentity
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
+            self.buttonSpreadView.transform = CGAffineTransform.identity
             }, completion: { (complete: Bool) in
                 self.buttonSpreadView.removeFromSuperview()
         })
     }
     
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        super.touchesCancelled(touches, withEvent: event)
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
         
-        UIView.animateWithDuration(0.25, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-            self.buttonSpreadView.transform = CGAffineTransformIdentity
+        UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
+            self.buttonSpreadView.transform = CGAffineTransform.identity
             }, completion: { (complete: Bool) in
                 self.buttonSpreadView.removeFromSuperview()
         })
