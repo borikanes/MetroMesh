@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,18 +20,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="yve-1r-TF3">
-                                <frame key="frameInset" width="600" height="600"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.20985093712806702" green="0.64857125282287598" blue="0.75255966186523438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yve-1r-TF3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ElH-S2-UJh"/>
-                            <constraint firstAttribute="trailing" secondItem="yve-1r-TF3" secondAttribute="trailing" id="K3H-xS-szJ"/>
-                            <constraint firstItem="yve-1r-TF3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="N5u-TX-3OO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yve-1r-TF3" secondAttribute="bottom" id="UiY-6C-ycp"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EfJ-CR-E66"/>
                 </viewController>
@@ -37,7 +29,4 @@
             <point key="canvasLocation" x="1266" y="384"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="BackgroundImage" width="375" height="667"/>
-    </resources>
 </document>
