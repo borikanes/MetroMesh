@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED761E261C7064E30035AFB0 /* TextFieldEffects in Resources */ = {isa = PBXBuildFile; fileRef = ED761E251C7064E30035AFB0 /* TextFieldEffects */; };
 		ED8746391C5019DA00B26BFE /* proxima-nova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E091C2F64620064DC86 /* proxima-nova.ttf */; };
 		ED87463A1C5019DE00B26BFE /* proxima-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0A1C2F64620064DC86 /* proxima-sans-medium.ttf */; };
 		ED87463B1C5019E400B26BFE /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0B1C2F64620064DC86 /* ProximaNova-Black.otf */; };
@@ -41,8 +40,8 @@
 		ED8746571C5019E400B26BFE /* ProximaNovaCond-Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */; };
 		ED8746581C5019E400B26BFE /* ProximaNovaCond-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
+		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
-		EDFDF0221C2D04B5002B4AF9 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF0211C2D04B5002B4AF9 /* MMViewController.swift */; };
 		EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */; };
 		EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */; };
 		EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */; };
@@ -82,11 +81,10 @@
 		ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
 		ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
 		ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
-		ED761E251C7064E30035AFB0 /* TextFieldEffects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TextFieldEffects; sourceTree = "<group>"; };
 		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
+		ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDFDF0211C2D04B5002B4AF9 /* MMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		EDFDF0241C2D04B5002B4AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDFDF0291C2D04B5002B4AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +110,7 @@
 				ED387E291C2F64970064DC86 /* Fonts */,
 			);
 			name = Resources;
+			path = ../Resources;
 			sourceTree = "<group>";
 		};
 		ED387E291C2F64970064DC86 /* Fonts */ = {
@@ -150,26 +149,25 @@
 				ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */,
 				ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */,
 			);
-			name = Fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		ED8746591C501BA300B26BFE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */,
-				EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */,
-				EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */,
-				ED87465C1C56A57000B26BFE /* MMeshButton.swift */,
+				EDD81F3D1E4EBEA0007B1168 /* Customs */,
+				ED8FC9231E41AAAE00CD7B91 /* Storyboards */,
 			);
-			name = View;
-			sourceTree = "<group>";
+			path = View;
+			sourceTree = SOURCE_ROOT;
 		};
 		ED87465A1C501BC700B26BFE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EDFDF0211C2D04B5002B4AF9 /* MMViewController.swift */,
+				ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */,
 			);
 			name = Controller;
+			path = ../Controller;
 			sourceTree = "<group>";
 		};
 		ED87465B1C501BDE00B26BFE /* Supporting Files */ = {
@@ -179,6 +177,33 @@
 				EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			path = "../Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED8FC9231E41AAAE00CD7B91 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */,
+				EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EDD81F3C1E4EBE38007B1168 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = ../Assets;
+			sourceTree = "<group>";
+		};
+		EDD81F3D1E4EBEA0007B1168 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				ED87465C1C56A57000B26BFE /* MMeshButton.swift */,
+			);
+			path = Customs;
 			sourceTree = "<group>";
 		};
 		EDFDF0131C2D04B5002B4AF9 = {
@@ -200,7 +225,7 @@
 		EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */ = {
 			isa = PBXGroup;
 			children = (
-				ED761E251C7064E30035AFB0 /* TextFieldEffects */,
+				EDD81F3C1E4EBE38007B1168 /* Assets */,
 				ED87465B1C501BDE00B26BFE /* Supporting Files */,
 				ED87465A1C501BC700B26BFE /* Controller */,
 				ED8746591C501BA300B26BFE /* View */,
@@ -214,7 +239,7 @@
 			children = (
 				EDFDF0341C2E47F9002B4AF9 /* MetroMesh appLogo.png */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,12 +269,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Oluwabori Oludemi";
 				TargetAttributes = {
 					EDFDF01B1C2D04B5002B4AF9 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 6N2N6264T3;
+						DevelopmentTeam = 3FHNAQRUEU;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -286,7 +311,6 @@
 				ED87464B1C5019E400B26BFE /* ProximaNovaCond-Black.otf in Resources */,
 				ED8746511C5019E400B26BFE /* ProximaNovaCond-Reg.otf in Resources */,
 				ED8746531C5019E400B26BFE /* ProximaNovaCond-Sbold.otf in Resources */,
-				ED761E261C7064E30035AFB0 /* TextFieldEffects in Resources */,
 				EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */,
 				ED8746521C5019E400B26BFE /* ProximaNovaCond-RegIt.otf in Resources */,
 				ED8746541C5019E400B26BFE /* ProximaNovaCond-SboldIt.otf in Resources */,
@@ -324,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFDF0221C2D04B5002B4AF9 /* MMViewController.swift in Sources */,
+				ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */,
 				ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 			);
@@ -365,8 +389,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -409,8 +435,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -429,6 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -439,7 +468,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MetroMesh/Info.plist;
+				DEVELOPMENT_TEAM = 3FHNAQRUEU;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,7 +484,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MetroMesh/Info.plist;
+				DEVELOPMENT_TEAM = 3FHNAQRUEU;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
