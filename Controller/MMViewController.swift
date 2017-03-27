@@ -16,6 +16,16 @@ class MMViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let path = Bundle.main.path(forResource: "stations", ofType: "json") {
+            do  {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                print(data)
+            } catch let error{
+                
+                print(error.localizedDescription)
+            }
+            
+        }
     }
     
     @IBAction func currentLocationClicked(_ sender: UIButton) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
 		51ABC8B31E7E0440008FC57B /* proxima-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-sans-medium.ttf"; sourceTree = "<group>"; };
 		51ABC8B41E7E0440008FC57B /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
@@ -85,15 +87,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		75A6D963847018FE1E70DC27 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ED387E081C2F64110064DC86 /* Resources */ = {
+		51DEB15A1E86255A00F41E2C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */,
@@ -128,7 +122,25 @@
 				51ABC8CF1E7E0440008FC57B /* ProximaNovaCond-ThinIt.otf */,
 				51ABC8D01E7E0440008FC57B /* ProximaNovaCond-Xbold.otf */,
 				51ABC8D11E7E0440008FC57B /* ProximaNovaCond-XboldIt.otf */,
+			);
+			name = Fonts;
+			path = /Users/borikanes/Code/MetroMesh/Resources/Fonts;
+			sourceTree = "<absolute>";
+		};
+		75A6D963847018FE1E70DC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED387E081C2F64110064DC86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51DEB15A1E86255A00F41E2C /* Fonts */,
 				EDFDF0311C2E4324002B4AF9 /* Images */,
+				514CD7131E862D1F00AF4F52 /* stations.json */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -294,6 +306,7 @@
 				EDFDF0351C2E47F9002B4AF9 /* MetroMesh appLogo.png in Resources */,
 				EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */,
 				EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */,
+				514CD7141E862D1F00AF4F52 /* stations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
