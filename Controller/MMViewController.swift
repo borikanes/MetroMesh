@@ -18,8 +18,14 @@ class MMViewController: UIViewController {
         super.viewDidLoad()
         if let path = Bundle.main.path(forResource: "stations", ofType: "json") {
             do  {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                print(data)
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                
+                guard let stations = json as? [String: [Any]] else {
+                        return
+                }
+                
+                print(json)
             } catch let error{
                 
                 print(error.localizedDescription)

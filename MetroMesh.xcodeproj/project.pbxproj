@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
+		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
+		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
 		51ABC8B31E7E0440008FC57B /* proxima-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-sans-medium.ttf"; sourceTree = "<group>"; };
 		51ABC8B41E7E0440008FC57B /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 				EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		514CD7151E8A1EEF00AF4F52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				514CD7161E8A1F0800AF4F52 /* Stations.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		51DEB15A1E86255A00F41E2C /* Fonts */ = {
@@ -221,6 +231,7 @@
 		EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */ = {
 			isa = PBXGroup;
 			children = (
+				514CD7151E8A1EEF00AF4F52 /* Models */,
 				EDD81F3C1E4EBE38007B1168 /* Assets */,
 				ED87465B1C501BDE00B26BFE /* Supporting Files */,
 				ED87465A1C501BC700B26BFE /* Controller */,
@@ -251,6 +262,7 @@
 				EDFDF01A1C2D04B5002B4AF9 /* Resources */,
 				F117F1C703E0771730F9EAED /* [CP] Embed Pods Frameworks */,
 				2942B3DC534D7B7A86F2C2CD /* [CP] Copy Pods Resources */,
+				514CD7181E8A214300AF4F52 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -328,6 +340,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		514CD7181E8A214300AF4F52 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		A116CCA1A150538F1FB3C3EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +392,7 @@
 			files = (
 				ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */,
 				ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */,
+				514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
