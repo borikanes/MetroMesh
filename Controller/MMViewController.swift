@@ -13,6 +13,7 @@ import UIKit
 class MMViewController: UIViewController {
     
     var locationManager:CLLocationManager!
+    let stations = [MetroStations]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,14 @@ class MMViewController: UIViewController {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 
-                guard let stations = json as? [String: [Any]] else {
-                        return
+//                guard let stations = json as? [String: [Any]] else {
+//                        return
+//                }
+                
+                if let stations = json as? [String: [Any]] {
+                    if let stationsArray = stations["Stations"]{
+                        
+                    }
                 }
                 
                 print(json)
