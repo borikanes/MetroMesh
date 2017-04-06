@@ -10,8 +10,8 @@ import Foundation
 
 struct MetroStations {
     
-    enum MetroLines: String{
-        case red = "RD"
+    enum MetroLines: String {
+        case redColor = "RD"
         case blue = "BL"
         case yellow = "YL"
         case orange = "OR"

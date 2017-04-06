@@ -37,7 +37,7 @@ class MMViewController: UIViewController {
                     }
                     
                 }
-                print(json)
+                print(metroStations)
             } catch let error{
                 
                 print(error.localizedDescription)
