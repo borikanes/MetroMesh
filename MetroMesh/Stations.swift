@@ -9,7 +9,7 @@
 import Foundation
 
 struct MetroStations {
-    
+
     enum MetroLines: String {
         case redColor = "RD"
         case blue = "BL"
@@ -18,17 +18,17 @@ struct MetroStations {
         case silver = "SV"
         case green = "GR"
     }
-    
+
     struct MetroLocation {
         let latitude: Double
         let longitude: Double
     }
-    
+
     let name: String
     let code: String
     var lines = [MetroLines]()
     let address: MetroLocation
-    
+
     init?(json: [String: Any]) {
         guard let code = json["Code"] as? String,
             let name = json["Name"] as? String,
@@ -53,10 +53,10 @@ struct MetroStations {
         if let line3 = lineCode3 {
             self.lines.append(MetroStations.MetroLines(rawValue: line3)!)
         }
-        
+
         if let line4 = lineCode4 {
             self.lines.append(MetroStations.MetroLines(rawValue: line4)!)
         }
     }
-    
+
 }
