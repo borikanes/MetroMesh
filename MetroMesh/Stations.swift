@@ -34,28 +34,33 @@ struct MetroStations {
             let name = json["Name"] as? String,
             let latitude = json["Lat"] as? Double,
             let longitude = json["Lon"] as? Double,
-            let lineCode1 = json["LineCode1"] as? String?,
-            let lineCode2 = json["LineCode2"] as? String?,
-            let lineCode3 = json["LineCode3"] as? String?,
-            let lineCode4 = json["LineCode4"] as? String? else {
+            let lineCode1 = json["LineCode1"] as? String? else {
                 debugPrint("Parsing json failed in init for MetroStations")
                 return nil
         }
         self.code = code
         self.name = name
         self.address = MetroLocation(latitude: latitude, longitude: longitude)
-        if let line1 = lineCode1 {
+        if let line1 = lineCode1 { // This will always have a value or would it 🤔
             self.lines.append(MetroStations.MetroLines(rawValue: line1)!)
         }
-        if let line2 = lineCode2 {
-            self.lines.append(MetroStations.MetroLines(rawValue: line2)!)
-        }
-        if let line3 = lineCode3 {
-            self.lines.append(MetroStations.MetroLines(rawValue: line3)!)
+
+        if let line2 = json["LineCode2"] as? String? {
+            if let line2 = line2 {
+                self.lines.append(MetroStations.MetroLines(rawValue: line2)!)
+            }
         }
 
-        if let line4 = lineCode4 {
-            self.lines.append(MetroStations.MetroLines(rawValue: line4)!)
+        if let line3 = json["LineCode3"] as? String? {
+            if let line3 = line3 {
+                self.lines.append(MetroStations.MetroLines(rawValue: line3)!)
+            }
+        }
+
+        if let line4 = json["LineCode4"] as? String? {
+            if let line4 = line4 {
+                self.lines.append(MetroStations.MetroLines(rawValue: line4)!)
+            }
         }
     }
 

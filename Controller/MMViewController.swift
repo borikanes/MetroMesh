@@ -32,12 +32,10 @@ class MMViewController: UIViewController {
                             debugPrint("Seems like failable init returned nil for metroStations struct")
                             return
                         }
-
                         metroStations.append(stationObject)
                     }
 
                 }
-                print(metroStations)
             } catch let error {
                 print(error.localizedDescription)
             }
