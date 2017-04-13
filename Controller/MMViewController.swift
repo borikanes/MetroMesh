@@ -11,17 +11,17 @@ import CoreLocation
 import UIKit
 
 class MMViewController: UIViewController {
-    
+
     var locationManager:CLLocationManager!
     var metroStations = [MetroStations]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let path = Bundle.main.path(forResource: "stations", ofType: "json") {
-            do  {
+            do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                
+
                 if let stations = json as? [String: [Any]] {
                     guard let stationsArray = stations["Stations"] as [Any]! else {
                         debugPrint("Could'nt find Stations key in json")
@@ -32,42 +32,38 @@ class MMViewController: UIViewController {
                             debugPrint("Seems like failable init returned nil for metroStations struct")
                             return
                         }
-                        
                         metroStations.append(stationObject)
                     }
-                    
+
                 }
-                print(json)
-            } catch let error{
-                
+            } catch let error {
                 print(error.localizedDescription)
             }
-            
+
         }
     }
-    
+
     @IBAction func currentLocationClicked(_ sender: UIButton) {
         getCurrentLocation()
     }
-    
-    func getCurrentLocation()  {
+
+    func getCurrentLocation() {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
-        
+
         if CLLocationManager.locationServicesEnabled() {
             debugPrint("Allowed to get current location")
             locationManager.startUpdatingLocation()
-        }
-        else{
+        } else {
             debugPrint("Whoops, you didn't enable location")
         }
     }
-    
+
 }
 
-extension MMViewController: CLLocationManagerDelegate{
+extension MMViewController: CLLocationManagerDelegate {
     /*
      *  locationManager:didUpdateLocations:
      *
@@ -83,7 +79,7 @@ extension MMViewController: CLLocationManagerDelegate{
             debugPrint("Error fetching location from [CLLocation]")
             return
         }
-        
+
         print("Lat: \(location.coordinate.latitude) --- Lon: \(location.coordinate.longitude)")
     }
 }
