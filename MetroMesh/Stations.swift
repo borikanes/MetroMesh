@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct MetroStations {
     
@@ -28,6 +29,7 @@ struct MetroStations {
     let code: String
     var lines = [MetroLines]()
     let address: MetroLocation
+    let region: CLCircularRegion?
     
     init?(json: [String: Any]) {
         guard let code = json["Code"] as? String,
@@ -44,6 +46,12 @@ struct MetroStations {
         self.code = code
         self.name = name
         self.address = MetroLocation(latitude: latitude, longitude: longitude)
+        let addressIn2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        region = CLCircularRegion(center: addressIn2D, radius: 804.67, identifier: name)
+        region?.notifyOnEntry = true
+        region?.notifyOnExit = false
+        
+        
         if let line1 = lineCode1 {
             self.lines.append(MetroStations.MetroLines(rawValue: line1)!)
         }

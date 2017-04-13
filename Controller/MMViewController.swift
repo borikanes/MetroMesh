@@ -83,6 +83,7 @@ extension MMViewController: CLLocationManagerDelegate{
             debugPrint("Error fetching location from [CLLocation]")
             return
         }
+        
         print("Lat: \(location.coordinate.latitude) --- Lon: \(location.coordinate.longitude)")
     }
 }
