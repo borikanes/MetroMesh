@@ -28,8 +28,19 @@ struct MetroStations {
     let name: String
     let code: String
     var lines = [MetroLines]()
-    let address: MetroLocation
-    let region: CLCircularRegion?
+    let address: MetroLocation?
+    var region: CLCircularRegion?
+    var radius = 804.67 {
+        didSet {
+            if let addr = address {
+                let addressIn2D = CLLocationCoordinate2D(
+                    latitude: addr.latitude , longitude: addr.longitude)
+                region = CLCircularRegion(center: addressIn2D, radius: radius, identifier: name)
+                region?.notifyOnEntry = true
+                region?.notifyOnExit = false
+            }
+        }
+    }
 
     init?(json: [String: Any]) {
         guard let code = json["Code"] as? String,
@@ -40,14 +51,14 @@ struct MetroStations {
                 debugPrint("Parsing json failed in init for MetroStations")
                 return nil
         }
+        let addressIn2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+
         self.code = code
         self.name = name
         self.address = MetroLocation(latitude: latitude, longitude: longitude)
 
-        let addressIn2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-
         //Find an auto way to do the radius calculation
-        region = CLCircularRegion(center: addressIn2D, radius: 804.67, identifier: name)
+        region = CLCircularRegion(center: addressIn2D, radius: radius, identifier: name)
         region?.notifyOnEntry = true
         region?.notifyOnExit = false
 

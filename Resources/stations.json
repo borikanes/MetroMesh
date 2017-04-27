@@ -1,6 +1,24 @@
 {
     "Stations": [
                  {
+                 "Code": "test",
+                 "Name": "Test",
+                 "StationTogether1": "test",
+                 "StationTogether2": "",
+                 "LineCode1": "RD",
+                 "LineCode2": null,
+                 "LineCode3": null,
+                 "LineCode4": null,
+                 "Lat": 37.785834,
+                 "Lon": -122.406417,
+                 "Address": {
+                 "Street": "1600 Pennsylvania Ave",
+                 "City": "Washington",
+                 "State": "DC",
+                 "Zip": "20005"
+                 }
+                 },
+                 {
                  "Code": "A01",
                  "Name": "Metro Center",
                  "StationTogether1": "C01",

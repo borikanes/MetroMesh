@@ -9,6 +9,7 @@
 import Foundation
 import CoreLocation
 import UIKit
+import UserNotifications
 
 class MMViewController: UIViewController {
 
@@ -75,9 +76,17 @@ extension MMViewController: CLLocationManagerDelegate {
      *    locations is an array of CLLocation objects in chronological order.
      */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        debugPrint("did update location")
         guard let location = locations.first else {
             debugPrint("Error fetching location from [CLLocation]")
             return
+        }
+
+        if (metroStations.first?.region?.contains(CLLocationCoordinate2D(
+            latitude: location.coordinate.latitude,
+            longitude: location.coordinate.latitude)))! {
+            // Get information about station here THEN send notification of train statuses in that station
+            let _ = UNLocationNotificationTrigger(region: (metroStations.first?.region)!, repeats: false)
         }
 
         print("Lat: \(location.coordinate.latitude) --- Lon: \(location.coordinate.longitude)")
