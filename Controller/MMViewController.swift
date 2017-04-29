@@ -14,34 +14,11 @@ import UserNotifications
 class MMViewController: UIViewController {
 
     var locationManager:CLLocationManager!
-    var metroStations = [MetroStations]()
+    var metroStations = MMLoadStations.sharedInstance.getStations()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let path = Bundle.main.path(forResource: "stations", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
 
-                if let stations = json as? [String: [Any]] {
-                    guard let stationsArray = stations["Stations"] as [Any]! else {
-                        debugPrint("Could'nt find Stations key in json")
-                        return
-                    }
-                    for case let each_station as [String: Any] in stationsArray {
-                        guard let stationObject = MetroStations(json: each_station) else {
-                            debugPrint("Seems like failable init returned nil for metroStations struct")
-                            return
-                        }
-                        metroStations.append(stationObject)
-                    }
-
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-
-        }
     }
 
     @IBAction func currentLocationClicked(_ sender: UIButton) {
@@ -81,12 +58,16 @@ extension MMViewController: CLLocationManagerDelegate {
             debugPrint("Error fetching location from [CLLocation]")
             return
         }
+        guard let localMetroStations = metroStations  else {
+            debugPrint("Metro Stations array is empty")
+            return
+        }
 
-        if (metroStations.first?.region?.contains(CLLocationCoordinate2D(
+        if (localMetroStations.first?.region?.contains(CLLocationCoordinate2D(
             latitude: location.coordinate.latitude,
             longitude: location.coordinate.latitude)))! {
             // Get information about station here THEN send notification of train statuses in that station
-            let _ = UNLocationNotificationTrigger(region: (metroStations.first?.region)!, repeats: false)
+            _ = UNLocationNotificationTrigger(region: (localMetroStations.first?.region)!, repeats: false)
         }
 
         print("Lat: \(location.coordinate.latitude) --- Lon: \(location.coordinate.longitude)")

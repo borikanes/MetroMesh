@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */; };
 		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
 		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLoadStations.swift; sourceTree = "<group>"; };
 		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				514CD7161E8A1F0800AF4F52 /* Stations.swift */,
+				514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			files = (
 				ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */,
 				ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */,
+				514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */,
 				514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 			);
