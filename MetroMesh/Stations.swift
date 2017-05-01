@@ -30,7 +30,7 @@ struct MetroStations {
     var lines = [MetroLines]()
     let address: MetroLocation?
     var region: CLCircularRegion?
-    var radius = 804.67 {
+    var radius = 5.0 {
         didSet {
             if let addr = address {
                 let addressIn2D = CLLocationCoordinate2D(

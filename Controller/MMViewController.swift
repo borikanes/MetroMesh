@@ -15,6 +15,7 @@ class MMViewController: UIViewController {
 
     var locationManager:CLLocationManager!
     var metroStations = MMLoadStations.sharedInstance.getStations()
+    let center = UNUserNotificationCenter.current()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class MMViewController: UIViewController {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+//        locationManager.requestAlwaysAuthorization()
 
         if CLLocationManager.locationServicesEnabled() {
             debugPrint("Allowed to get current location")
@@ -40,6 +41,14 @@ class MMViewController: UIViewController {
     }
 
 }
+
+/**
+ center.getNotificationSettings { (settings) in
+ if settings.authorizationStatus != .authorized {
+ // Notifications not allowed
+ }
+ }
+ */
 
 extension MMViewController: CLLocationManagerDelegate {
     /*
@@ -62,12 +71,27 @@ extension MMViewController: CLLocationManagerDelegate {
             debugPrint("Metro Stations array is empty")
             return
         }
+        let content = UNMutableNotificationContent()
+        content.title = "Attention"
+        content.body = "You were able to get notification based on location"
+        content.sound = UNNotificationSound.default()
 
         if (localMetroStations.first?.region?.contains(CLLocationCoordinate2D(
             latitude: location.coordinate.latitude,
             longitude: location.coordinate.latitude)))! {
+            debugPrint("About to call the notification to fire")
             // Get information about station here THEN send notification of train statuses in that station
-            _ = UNLocationNotificationTrigger(region: (localMetroStations.first?.region)!, repeats: false)
+            let trigger = UNLocationNotificationTrigger(region:
+                (localMetroStations.first?.region)!, repeats: false)
+            let identifier = "UYLLocalNotification"
+            let request = UNNotificationRequest(identifier: identifier,
+                                                content: content, trigger: trigger)
+            center.add(request, withCompletionHandler: { (error) in
+                if let error = error {
+                    // Something went wrong
+                    debugPrint(error)
+                }
+            })
         }
 
         print("Lat: \(location.coordinate.latitude) --- Lon: \(location.coordinate.longitude)")
