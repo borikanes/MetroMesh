@@ -2,16 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>proxima-nova.tth</string>
-		<string>ProximaNova-Thin.otf</string>
-		<string>ProximaNova-Sbold.otf</string>
-		<string>ProximaNova-Bold.otf</string>
-		<string>ProximaNova-Light.otf</string>
-		<string>ProximaNova-Reg.otf</string>
-		<string>proxima-nova.ttf</string>
-	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is important to let you know when the next train is coming.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location is important to let you know when the next train is coming.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -32,6 +26,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>proxima-nova.tth</string>
+		<string>ProximaNova-Thin.otf</string>
+		<string>ProximaNova-Sbold.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+		<string>ProximaNova-Light.otf</string>
+		<string>ProximaNova-Reg.otf</string>
+		<string>proxima-nova.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

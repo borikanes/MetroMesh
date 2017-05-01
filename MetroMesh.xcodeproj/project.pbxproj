@@ -7,38 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED8746391C5019DA00B26BFE /* proxima-nova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E091C2F64620064DC86 /* proxima-nova.ttf */; };
-		ED87463A1C5019DE00B26BFE /* proxima-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0A1C2F64620064DC86 /* proxima-sans-medium.ttf */; };
-		ED87463B1C5019E400B26BFE /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0B1C2F64620064DC86 /* ProximaNova-Black.otf */; };
-		ED87463C1C5019E400B26BFE /* ProximaNova-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0C1C2F64620064DC86 /* ProximaNova-BlackIt.otf */; };
-		ED87463D1C5019E400B26BFE /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0D1C2F64620064DC86 /* ProximaNova-Bold.otf */; };
-		ED87463E1C5019E400B26BFE /* ProximaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0E1C2F64620064DC86 /* ProximaNova-Bold.ttf */; };
-		ED87463F1C5019E400B26BFE /* ProximaNova-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E0F1C2F64620064DC86 /* ProximaNova-BoldIt.otf */; };
-		ED8746401C5019E400B26BFE /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E101C2F64620064DC86 /* ProximaNova-Light.otf */; };
-		ED8746411C5019E400B26BFE /* ProximaNova-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E111C2F64620064DC86 /* ProximaNova-LightIt.otf */; };
-		ED8746421C5019E400B26BFE /* ProximaNova-Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E121C2F64620064DC86 /* ProximaNova-Reg.otf */; };
-		ED8746431C5019E400B26BFE /* ProximaNova-RegIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E131C2F64620064DC86 /* ProximaNova-RegIt.otf */; };
-		ED8746441C5019E400B26BFE /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E141C2F64620064DC86 /* ProximaNova-Regular.ttf */; };
-		ED8746451C5019E400B26BFE /* ProximaNova-Sbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E151C2F64620064DC86 /* ProximaNova-Sbold.otf */; };
-		ED8746461C5019E400B26BFE /* ProximaNova-SboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E161C2F64620064DC86 /* ProximaNova-SboldIt.otf */; };
-		ED8746471C5019E400B26BFE /* ProximaNova-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E171C2F64620064DC86 /* ProximaNova-Thin.otf */; };
-		ED8746481C5019E400B26BFE /* ProximaNova-ThinIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E181C2F64620064DC86 /* ProximaNova-ThinIt.otf */; };
-		ED8746491C5019E400B26BFE /* ProximaNova-Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E191C2F64620064DC86 /* ProximaNova-Xbold.otf */; };
-		ED87464A1C5019E400B26BFE /* ProximaNova-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1A1C2F64620064DC86 /* ProximaNova-XboldIt.otf */; };
-		ED87464B1C5019E400B26BFE /* ProximaNovaCond-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1B1C2F64620064DC86 /* ProximaNovaCond-Black.otf */; };
-		ED87464C1C5019E400B26BFE /* ProximaNovaCond-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1C1C2F64620064DC86 /* ProximaNovaCond-BlackIt.otf */; };
-		ED87464D1C5019E400B26BFE /* ProximaNovaCond-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1D1C2F64620064DC86 /* ProximaNovaCond-Bold.otf */; };
-		ED87464E1C5019E400B26BFE /* ProximaNovaCond-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1E1C2F64620064DC86 /* ProximaNovaCond-BoldIt.otf */; };
-		ED87464F1C5019E400B26BFE /* ProximaNovaCond-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E1F1C2F64620064DC86 /* ProximaNovaCond-Light.otf */; };
-		ED8746501C5019E400B26BFE /* ProximaNovaCond-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E201C2F64620064DC86 /* ProximaNovaCond-LightIt.otf */; };
-		ED8746511C5019E400B26BFE /* ProximaNovaCond-Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E211C2F64620064DC86 /* ProximaNovaCond-Reg.otf */; };
-		ED8746521C5019E400B26BFE /* ProximaNovaCond-RegIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E221C2F64620064DC86 /* ProximaNovaCond-RegIt.otf */; };
-		ED8746531C5019E400B26BFE /* ProximaNovaCond-Sbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E231C2F64620064DC86 /* ProximaNovaCond-Sbold.otf */; };
-		ED8746541C5019E400B26BFE /* ProximaNovaCond-SboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E241C2F64620064DC86 /* ProximaNovaCond-SboldIt.otf */; };
-		ED8746551C5019E400B26BFE /* ProximaNovaCond-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E251C2F64620064DC86 /* ProximaNovaCond-Thin.otf */; };
-		ED8746561C5019E400B26BFE /* ProximaNovaCond-ThinIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */; };
-		ED8746571C5019E400B26BFE /* ProximaNovaCond-Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */; };
-		ED8746581C5019E400B26BFE /* ProximaNovaCond-XboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */; };
+		514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */; };
+		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
+		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
@@ -46,41 +17,48 @@
 		EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */; };
 		EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */; };
 		EDFDF0351C2E47F9002B4AF9 /* MetroMesh appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0341C2E47F9002B4AF9 /* MetroMesh appLogo.png */; };
+		F520AB626A4241D8E606024A /* Pods_MetroMesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED387E091C2F64620064DC86 /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
-		ED387E0A1C2F64620064DC86 /* proxima-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-sans-medium.ttf"; sourceTree = "<group>"; };
-		ED387E0B1C2F64620064DC86 /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
-		ED387E0C1C2F64620064DC86 /* ProximaNova-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BlackIt.otf"; sourceTree = "<group>"; };
-		ED387E0D1C2F64620064DC86 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
-		ED387E0E1C2F64620064DC86 /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
-		ED387E0F1C2F64620064DC86 /* ProximaNova-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BoldIt.otf"; sourceTree = "<group>"; };
-		ED387E101C2F64620064DC86 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
-		ED387E111C2F64620064DC86 /* ProximaNova-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-LightIt.otf"; sourceTree = "<group>"; };
-		ED387E121C2F64620064DC86 /* ProximaNova-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Reg.otf"; sourceTree = "<group>"; };
-		ED387E131C2F64620064DC86 /* ProximaNova-RegIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-RegIt.otf"; sourceTree = "<group>"; };
-		ED387E141C2F64620064DC86 /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
-		ED387E151C2F64620064DC86 /* ProximaNova-Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Sbold.otf"; sourceTree = "<group>"; };
-		ED387E161C2F64620064DC86 /* ProximaNova-SboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SboldIt.otf"; sourceTree = "<group>"; };
-		ED387E171C2F64620064DC86 /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
-		ED387E181C2F64620064DC86 /* ProximaNova-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ThinIt.otf"; sourceTree = "<group>"; };
-		ED387E191C2F64620064DC86 /* ProximaNova-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Xbold.otf"; sourceTree = "<group>"; };
-		ED387E1A1C2F64620064DC86 /* ProximaNova-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-XboldIt.otf"; sourceTree = "<group>"; };
-		ED387E1B1C2F64620064DC86 /* ProximaNovaCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Black.otf"; sourceTree = "<group>"; };
-		ED387E1C1C2F64620064DC86 /* ProximaNovaCond-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-BlackIt.otf"; sourceTree = "<group>"; };
-		ED387E1D1C2F64620064DC86 /* ProximaNovaCond-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Bold.otf"; sourceTree = "<group>"; };
-		ED387E1E1C2F64620064DC86 /* ProximaNovaCond-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-BoldIt.otf"; sourceTree = "<group>"; };
-		ED387E1F1C2F64620064DC86 /* ProximaNovaCond-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Light.otf"; sourceTree = "<group>"; };
-		ED387E201C2F64620064DC86 /* ProximaNovaCond-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-LightIt.otf"; sourceTree = "<group>"; };
-		ED387E211C2F64620064DC86 /* ProximaNovaCond-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Reg.otf"; sourceTree = "<group>"; };
-		ED387E221C2F64620064DC86 /* ProximaNovaCond-RegIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-RegIt.otf"; sourceTree = "<group>"; };
-		ED387E231C2F64620064DC86 /* ProximaNovaCond-Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Sbold.otf"; sourceTree = "<group>"; };
-		ED387E241C2F64620064DC86 /* ProximaNovaCond-SboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-SboldIt.otf"; sourceTree = "<group>"; };
-		ED387E251C2F64620064DC86 /* ProximaNovaCond-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Thin.otf"; sourceTree = "<group>"; };
-		ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
-		ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
-		ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
+		514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLoadStations.swift; sourceTree = "<group>"; };
+		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
+		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
+		51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
+		51ABC8B31E7E0440008FC57B /* proxima-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-sans-medium.ttf"; sourceTree = "<group>"; };
+		51ABC8B41E7E0440008FC57B /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		51ABC8B51E7E0440008FC57B /* ProximaNova-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BlackIt.otf"; sourceTree = "<group>"; };
+		51ABC8B61E7E0440008FC57B /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		51ABC8B71E7E0440008FC57B /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
+		51ABC8B81E7E0440008FC57B /* ProximaNova-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BoldIt.otf"; sourceTree = "<group>"; };
+		51ABC8B91E7E0440008FC57B /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		51ABC8BA1E7E0440008FC57B /* ProximaNova-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-LightIt.otf"; sourceTree = "<group>"; };
+		51ABC8BB1E7E0440008FC57B /* ProximaNova-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Reg.otf"; sourceTree = "<group>"; };
+		51ABC8BC1E7E0440008FC57B /* ProximaNova-RegIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-RegIt.otf"; sourceTree = "<group>"; };
+		51ABC8BD1E7E0440008FC57B /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
+		51ABC8BE1E7E0440008FC57B /* ProximaNova-Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Sbold.otf"; sourceTree = "<group>"; };
+		51ABC8BF1E7E0440008FC57B /* ProximaNova-SboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SboldIt.otf"; sourceTree = "<group>"; };
+		51ABC8C01E7E0440008FC57B /* ProximaNova-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Thin.otf"; sourceTree = "<group>"; };
+		51ABC8C11E7E0440008FC57B /* ProximaNova-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-ThinIt.otf"; sourceTree = "<group>"; };
+		51ABC8C21E7E0440008FC57B /* ProximaNova-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Xbold.otf"; sourceTree = "<group>"; };
+		51ABC8C31E7E0440008FC57B /* ProximaNova-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-XboldIt.otf"; sourceTree = "<group>"; };
+		51ABC8C41E7E0440008FC57B /* ProximaNovaCond-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Black.otf"; sourceTree = "<group>"; };
+		51ABC8C51E7E0440008FC57B /* ProximaNovaCond-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-BlackIt.otf"; sourceTree = "<group>"; };
+		51ABC8C61E7E0440008FC57B /* ProximaNovaCond-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Bold.otf"; sourceTree = "<group>"; };
+		51ABC8C71E7E0440008FC57B /* ProximaNovaCond-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-BoldIt.otf"; sourceTree = "<group>"; };
+		51ABC8C81E7E0440008FC57B /* ProximaNovaCond-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Light.otf"; sourceTree = "<group>"; };
+		51ABC8C91E7E0440008FC57B /* ProximaNovaCond-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-LightIt.otf"; sourceTree = "<group>"; };
+		51ABC8CA1E7E0440008FC57B /* ProximaNovaCond-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Reg.otf"; sourceTree = "<group>"; };
+		51ABC8CB1E7E0440008FC57B /* ProximaNovaCond-RegIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-RegIt.otf"; sourceTree = "<group>"; };
+		51ABC8CC1E7E0440008FC57B /* ProximaNovaCond-Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Sbold.otf"; sourceTree = "<group>"; };
+		51ABC8CD1E7E0440008FC57B /* ProximaNovaCond-SboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-SboldIt.otf"; sourceTree = "<group>"; };
+		51ABC8CE1E7E0440008FC57B /* ProximaNovaCond-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Thin.otf"; sourceTree = "<group>"; };
+		51ABC8CF1E7E0440008FC57B /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
+		51ABC8D01E7E0440008FC57B /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
+		51ABC8D11E7E0440008FC57B /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
+		7C6F3D80A80AF2EBAD94A1BE /* Pods-MetroMesh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroMesh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh.debug.xcconfig"; sourceTree = "<group>"; };
+		E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetroMesh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroMesh.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh.release.xcconfig"; sourceTree = "<group>"; };
 		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
 		ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,59 +75,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F520AB626A4241D8E606024A /* Pods_MetroMesh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB9FAFFF4E82ABC495251B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C6F3D80A80AF2EBAD94A1BE /* Pods-MetroMesh.debug.xcconfig */,
+				EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		514CD7151E8A1EEF00AF4F52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				514CD7161E8A1F0800AF4F52 /* Stations.swift */,
+				514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		51DEB15A1E86255A00F41E2C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */,
+				51ABC8B31E7E0440008FC57B /* proxima-sans-medium.ttf */,
+				51ABC8B41E7E0440008FC57B /* ProximaNova-Black.otf */,
+				51ABC8B51E7E0440008FC57B /* ProximaNova-BlackIt.otf */,
+				51ABC8B61E7E0440008FC57B /* ProximaNova-Bold.otf */,
+				51ABC8B71E7E0440008FC57B /* ProximaNova-Bold.ttf */,
+				51ABC8B81E7E0440008FC57B /* ProximaNova-BoldIt.otf */,
+				51ABC8B91E7E0440008FC57B /* ProximaNova-Light.otf */,
+				51ABC8BA1E7E0440008FC57B /* ProximaNova-LightIt.otf */,
+				51ABC8BB1E7E0440008FC57B /* ProximaNova-Reg.otf */,
+				51ABC8BC1E7E0440008FC57B /* ProximaNova-RegIt.otf */,
+				51ABC8BD1E7E0440008FC57B /* ProximaNova-Regular.ttf */,
+				51ABC8BE1E7E0440008FC57B /* ProximaNova-Sbold.otf */,
+				51ABC8BF1E7E0440008FC57B /* ProximaNova-SboldIt.otf */,
+				51ABC8C01E7E0440008FC57B /* ProximaNova-Thin.otf */,
+				51ABC8C11E7E0440008FC57B /* ProximaNova-ThinIt.otf */,
+				51ABC8C21E7E0440008FC57B /* ProximaNova-Xbold.otf */,
+				51ABC8C31E7E0440008FC57B /* ProximaNova-XboldIt.otf */,
+				51ABC8C41E7E0440008FC57B /* ProximaNovaCond-Black.otf */,
+				51ABC8C51E7E0440008FC57B /* ProximaNovaCond-BlackIt.otf */,
+				51ABC8C61E7E0440008FC57B /* ProximaNovaCond-Bold.otf */,
+				51ABC8C71E7E0440008FC57B /* ProximaNovaCond-BoldIt.otf */,
+				51ABC8C81E7E0440008FC57B /* ProximaNovaCond-Light.otf */,
+				51ABC8C91E7E0440008FC57B /* ProximaNovaCond-LightIt.otf */,
+				51ABC8CA1E7E0440008FC57B /* ProximaNovaCond-Reg.otf */,
+				51ABC8CB1E7E0440008FC57B /* ProximaNovaCond-RegIt.otf */,
+				51ABC8CC1E7E0440008FC57B /* ProximaNovaCond-Sbold.otf */,
+				51ABC8CD1E7E0440008FC57B /* ProximaNovaCond-SboldIt.otf */,
+				51ABC8CE1E7E0440008FC57B /* ProximaNovaCond-Thin.otf */,
+				51ABC8CF1E7E0440008FC57B /* ProximaNovaCond-ThinIt.otf */,
+				51ABC8D01E7E0440008FC57B /* ProximaNovaCond-Xbold.otf */,
+				51ABC8D11E7E0440008FC57B /* ProximaNovaCond-XboldIt.otf */,
+			);
+			name = Fonts;
+			path = /Users/borikanes/Code/MetroMesh/Resources/Fonts;
+			sourceTree = "<absolute>";
+		};
+		75A6D963847018FE1E70DC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED387E081C2F64110064DC86 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				51DEB15A1E86255A00F41E2C /* Fonts */,
 				EDFDF0311C2E4324002B4AF9 /* Images */,
-				ED387E291C2F64970064DC86 /* Fonts */,
+				514CD7131E862D1F00AF4F52 /* stations.json */,
 			);
 			name = Resources;
 			path = ../Resources;
-			sourceTree = "<group>";
-		};
-		ED387E291C2F64970064DC86 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				ED387E091C2F64620064DC86 /* proxima-nova.ttf */,
-				ED387E0A1C2F64620064DC86 /* proxima-sans-medium.ttf */,
-				ED387E0B1C2F64620064DC86 /* ProximaNova-Black.otf */,
-				ED387E0C1C2F64620064DC86 /* ProximaNova-BlackIt.otf */,
-				ED387E0D1C2F64620064DC86 /* ProximaNova-Bold.otf */,
-				ED387E0E1C2F64620064DC86 /* ProximaNova-Bold.ttf */,
-				ED387E0F1C2F64620064DC86 /* ProximaNova-BoldIt.otf */,
-				ED387E101C2F64620064DC86 /* ProximaNova-Light.otf */,
-				ED387E111C2F64620064DC86 /* ProximaNova-LightIt.otf */,
-				ED387E121C2F64620064DC86 /* ProximaNova-Reg.otf */,
-				ED387E131C2F64620064DC86 /* ProximaNova-RegIt.otf */,
-				ED387E141C2F64620064DC86 /* ProximaNova-Regular.ttf */,
-				ED387E151C2F64620064DC86 /* ProximaNova-Sbold.otf */,
-				ED387E161C2F64620064DC86 /* ProximaNova-SboldIt.otf */,
-				ED387E171C2F64620064DC86 /* ProximaNova-Thin.otf */,
-				ED387E181C2F64620064DC86 /* ProximaNova-ThinIt.otf */,
-				ED387E191C2F64620064DC86 /* ProximaNova-Xbold.otf */,
-				ED387E1A1C2F64620064DC86 /* ProximaNova-XboldIt.otf */,
-				ED387E1B1C2F64620064DC86 /* ProximaNovaCond-Black.otf */,
-				ED387E1C1C2F64620064DC86 /* ProximaNovaCond-BlackIt.otf */,
-				ED387E1D1C2F64620064DC86 /* ProximaNovaCond-Bold.otf */,
-				ED387E1E1C2F64620064DC86 /* ProximaNovaCond-BoldIt.otf */,
-				ED387E1F1C2F64620064DC86 /* ProximaNovaCond-Light.otf */,
-				ED387E201C2F64620064DC86 /* ProximaNovaCond-LightIt.otf */,
-				ED387E211C2F64620064DC86 /* ProximaNovaCond-Reg.otf */,
-				ED387E221C2F64620064DC86 /* ProximaNovaCond-RegIt.otf */,
-				ED387E231C2F64620064DC86 /* ProximaNovaCond-Sbold.otf */,
-				ED387E241C2F64620064DC86 /* ProximaNovaCond-SboldIt.otf */,
-				ED387E251C2F64620064DC86 /* ProximaNovaCond-Thin.otf */,
-				ED387E261C2F64620064DC86 /* ProximaNovaCond-ThinIt.otf */,
-				ED387E271C2F64620064DC86 /* ProximaNovaCond-Xbold.otf */,
-				ED387E281C2F64620064DC86 /* ProximaNovaCond-XboldIt.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		ED8746591C501BA300B26BFE /* View */ = {
@@ -211,6 +218,8 @@
 			children = (
 				EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */,
 				EDFDF01D1C2D04B5002B4AF9 /* Products */,
+				4EB9FAFFF4E82ABC495251B1 /* Pods */,
+				75A6D963847018FE1E70DC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +234,7 @@
 		EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */ = {
 			isa = PBXGroup;
 			children = (
+				514CD7151E8A1EEF00AF4F52 /* Models */,
 				EDD81F3C1E4EBE38007B1168 /* Assets */,
 				ED87465B1C501BDE00B26BFE /* Supporting Files */,
 				ED87465A1C501BC700B26BFE /* Controller */,
@@ -249,9 +259,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDFDF02E1C2D04B5002B4AF9 /* Build configuration list for PBXNativeTarget "MetroMesh" */;
 			buildPhases = (
+				A116CCA1A150538F1FB3C3EA /* [CP] Check Pods Manifest.lock */,
 				EDFDF0181C2D04B5002B4AF9 /* Sources */,
 				EDFDF0191C2D04B5002B4AF9 /* Frameworks */,
 				EDFDF01A1C2D04B5002B4AF9 /* Resources */,
+				F117F1C703E0771730F9EAED /* [CP] Embed Pods Frameworks */,
+				2942B3DC534D7B7A86F2C2CD /* [CP] Copy Pods Resources */,
+				514CD7181E8A214300AF4F52 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,6 +290,7 @@
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 3FHNAQRUEU;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -302,46 +317,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8746571C5019E400B26BFE /* ProximaNovaCond-Xbold.otf in Resources */,
-				ED87463D1C5019E400B26BFE /* ProximaNova-Bold.otf in Resources */,
-				ED8746471C5019E400B26BFE /* ProximaNova-Thin.otf in Resources */,
-				ED8746551C5019E400B26BFE /* ProximaNovaCond-Thin.otf in Resources */,
-				ED8746421C5019E400B26BFE /* ProximaNova-Reg.otf in Resources */,
-				ED8746581C5019E400B26BFE /* ProximaNovaCond-XboldIt.otf in Resources */,
-				ED87464B1C5019E400B26BFE /* ProximaNovaCond-Black.otf in Resources */,
-				ED8746511C5019E400B26BFE /* ProximaNovaCond-Reg.otf in Resources */,
-				ED8746531C5019E400B26BFE /* ProximaNovaCond-Sbold.otf in Resources */,
 				EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */,
-				ED8746521C5019E400B26BFE /* ProximaNovaCond-RegIt.otf in Resources */,
-				ED8746541C5019E400B26BFE /* ProximaNovaCond-SboldIt.otf in Resources */,
-				ED87463C1C5019E400B26BFE /* ProximaNova-BlackIt.otf in Resources */,
-				ED87463A1C5019DE00B26BFE /* proxima-sans-medium.ttf in Resources */,
-				ED87463E1C5019E400B26BFE /* ProximaNova-Bold.ttf in Resources */,
-				ED8746441C5019E400B26BFE /* ProximaNova-Regular.ttf in Resources */,
-				ED87464C1C5019E400B26BFE /* ProximaNovaCond-BlackIt.otf in Resources */,
-				ED8746401C5019E400B26BFE /* ProximaNova-Light.otf in Resources */,
-				ED87464A1C5019E400B26BFE /* ProximaNova-XboldIt.otf in Resources */,
-				ED8746451C5019E400B26BFE /* ProximaNova-Sbold.otf in Resources */,
-				ED8746481C5019E400B26BFE /* ProximaNova-ThinIt.otf in Resources */,
-				ED87464F1C5019E400B26BFE /* ProximaNovaCond-Light.otf in Resources */,
-				ED87464E1C5019E400B26BFE /* ProximaNovaCond-BoldIt.otf in Resources */,
-				ED8746501C5019E400B26BFE /* ProximaNovaCond-LightIt.otf in Resources */,
 				EDFDF0351C2E47F9002B4AF9 /* MetroMesh appLogo.png in Resources */,
 				EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */,
-				ED8746391C5019DA00B26BFE /* proxima-nova.ttf in Resources */,
-				ED8746461C5019E400B26BFE /* ProximaNova-SboldIt.otf in Resources */,
-				ED87464D1C5019E400B26BFE /* ProximaNovaCond-Bold.otf in Resources */,
-				ED8746431C5019E400B26BFE /* ProximaNova-RegIt.otf in Resources */,
-				ED87463F1C5019E400B26BFE /* ProximaNova-BoldIt.otf in Resources */,
-				ED87463B1C5019E400B26BFE /* ProximaNova-Black.otf in Resources */,
-				ED8746491C5019E400B26BFE /* ProximaNova-Xbold.otf in Resources */,
-				ED8746411C5019E400B26BFE /* ProximaNova-LightIt.otf in Resources */,
-				ED8746561C5019E400B26BFE /* ProximaNovaCond-ThinIt.otf in Resources */,
 				EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */,
+				514CD7141E862D1F00AF4F52 /* stations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2942B3DC534D7B7A86F2C2CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		514CD7181E8A214300AF4F52 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		A116CCA1A150538F1FB3C3EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F117F1C703E0771730F9EAED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDFDF0181C2D04B5002B4AF9 /* Sources */ = {
@@ -350,6 +395,8 @@
 			files = (
 				ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */,
 				ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */,
+				514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */,
+				514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,32 +511,40 @@
 		};
 		EDFDF02F1C2D04B5002B4AF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6F3D80A80AF2EBAD94A1BE /* Pods-MetroMesh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3FHNAQRUEU;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		EDFDF0301C2D04B5002B4AF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3FHNAQRUEU;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.borikanes.MetroMesh;
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMesh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

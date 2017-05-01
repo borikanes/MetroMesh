@@ -1,0 +1,6 @@
+framework module Pods_MetroMesh {
+  umbrella header "Pods-MetroMesh-umbrella.h"
+
+  export *
+  module * { export * }
+}
