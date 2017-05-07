@@ -117,14 +117,9 @@ extension MMViewController: CLLocationManagerDelegate {
         content.body = "You were able to get notification based on location"
         content.sound = UNNotificationSound.default()
 
-        guard let localMetroStations = metroStations  else {
-            debugPrint("Metro Stations array is empty")
-            return
-        }
-
         //Get information about station here THEN send notification of train statuses in that station
-        let trigger = UNLocationNotificationTrigger(region:
-            (localMetroStations.first?.region)!, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,
+                                                        repeats: false)
         let identifier = "UYLLocalNotification"
         let request = UNNotificationRequest(identifier: identifier,
                                             content: content, trigger: trigger)
