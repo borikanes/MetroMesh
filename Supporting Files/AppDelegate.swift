@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let options: UNAuthorizationOptions = [.alert ]
+        let options: UNAuthorizationOptions = [.alert, .badge]
         let center = UNUserNotificationCenter.current()
         
         // Use getNotifications

@@ -24,6 +24,7 @@
 		514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLoadStations.swift; sourceTree = "<group>"; };
 		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
+		516E1DB91EBEC27B008EBFEA /* Union Station.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Union Station.gpx"; sourceTree = "<group>"; };
 		51ABC8B21E7E0440008FC57B /* proxima-nova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-nova.ttf"; sourceTree = "<group>"; };
 		51ABC8B31E7E0440008FC57B /* proxima-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "proxima-sans-medium.ttf"; sourceTree = "<group>"; };
 		51ABC8B41E7E0440008FC57B /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				51DEB15A1E86255A00F41E2C /* Fonts */,
 				EDFDF0311C2E4324002B4AF9 /* Images */,
 				514CD7131E862D1F00AF4F52 /* stations.json */,
+				516E1DB91EBEC27B008EBFEA /* Union Station.gpx */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -291,6 +293,11 @@
 						DevelopmentTeam = 3FHNAQRUEU;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};

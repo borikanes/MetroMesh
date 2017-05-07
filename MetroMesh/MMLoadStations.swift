@@ -16,8 +16,8 @@ class MMLoadStations {
     // dispatch_once is called behind the scenes
     static let sharedInstance = MMLoadStations()
 
-    func getStations() -> [MetroStations]? {
-        var stationArray = [MetroStations]()
+    func getStations() -> [MetroStation]? {
+        var stationArray = [MetroStation]()
         if let path = Bundle.main.path(forResource: "stations", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
@@ -29,7 +29,7 @@ class MMLoadStations {
                         return nil
                     }
                     for case let each_station as [String: Any] in stationsArray {
-                        guard let stationObject = MetroStations(json: each_station) else {
+                        guard let stationObject = MetroStation(json: each_station) else {
                             debugPrint("Seems like failable init returned nil for metroStations struct")
                             return nil
                         }
