@@ -60,7 +60,7 @@ struct MetroStation {
         //Find an auto way to do the radius calculation
         region = CLCircularRegion(center: addressIn2D, radius: radius, identifier: name)
         region?.notifyOnEntry = true
-        region?.notifyOnExit = false
+        region?.notifyOnExit = true
 
         if let line1 = lineCode1 {
             self.lines.append(MetroStation.MetroLines(rawValue: line1)!)

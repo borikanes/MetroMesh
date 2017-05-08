@@ -47,8 +47,6 @@ class MMViewController: UIViewController {
 
         }
 
-        print(locationManager.monitoredRegions)
-
         if CLLocationManager.locationServicesEnabled() {
             debugPrint("Allowed to get current location")
             locationManager.startUpdatingLocation()
@@ -72,16 +70,40 @@ class MMViewController: UIViewController {
 
         return regionsArray
     }
+
+    // MARK: Helper fuction to send region notifications
+    func sendLocalNotification(region: CLRegion) {
+        center.getNotificationSettings { (settings) in
+            if settings.authorizationStatus == .authorized {
+                let content = UNMutableNotificationContent()
+                content.title = "Hurry up!"
+                content.body = "You train leaves in 2 minutes"
+                content.sound = UNNotificationSound.default()
+
+                //Get information about station here THEN send notification of train statuses in that station
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1,
+                                                                repeats: false)
+                let identifier = region.identifier
+                let request = UNNotificationRequest(identifier: identifier,
+                                                    content: content, trigger: trigger)
+                self.center.add(request, withCompletionHandler: { (error) in
+                    if let error = error {
+                        // Something went wrong
+                        debugPrint(error)
+                    }
+                })
+            } else {
+                // swiftlint:disable todo
+                // TODO: Handle error when alerts are not shown
+            }
+        }
+    }
+
 }
 
 /**
- center.getNotificationSettings { (settings) in
- if settings.authorizationStatus != .authorized {
- // Notifications not allowed
- }
- }
+ CLLocation delegates
  */
-
 extension MMViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -96,40 +118,14 @@ extension MMViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedAlways {
-//            if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
-//                guard let regionArray = regionsArray else {
-//                    return
-//                }
-//
-//                // Starts monitoring each region in the regions array by using the helper function and map
-//                // It's set to nothing because i don't need the return array from map
-//                _ = regionArray.map { startMonitoringHelper(region: $0) }
-//
-//            }
-
             locationManager.startUpdatingLocation()
+        } else if status == .denied || status == .restricted || status == .notDetermined {
+            // TODO: Display message to user showing that they need to enable location
         }
     }
 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        let content = UNMutableNotificationContent()
-        content.title = "Attention"
-        content.body = "You were able to get notification based on location"
-        content.sound = UNNotificationSound.default()
-
-        //Get information about station here THEN send notification of train statuses in that station
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,
-                                                        repeats: false)
-        let identifier = "UYLLocalNotification"
-        let request = UNNotificationRequest(identifier: identifier,
-                                            content: content, trigger: trigger)
-        center.add(request, withCompletionHandler: { (error) in
-            if let error = error {
-                // Something went wrong
-                debugPrint(error)
-            }
-        })
-
+        sendLocalNotification(region: region)
     }
 
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
