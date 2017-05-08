@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5114F7341EBFF13B000B3735 /* MetroMeshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114F7331EBFF13B000B3735 /* MetroMeshUITests.swift */; };
+		5114F7421EBFF159000B3735 /* MetroMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114F7411EBFF159000B3735 /* MetroMeshTests.swift */; };
 		514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */; };
 		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
 		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
@@ -20,7 +22,30 @@
 		F520AB626A4241D8E606024A /* Pods_MetroMesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E010C678D8D5289D3D5BE8C5 /* Pods_MetroMesh.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5114F7361EBFF13B000B3735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFDF0141C2D04B5002B4AF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFDF01B1C2D04B5002B4AF9;
+			remoteInfo = MetroMesh;
+		};
+		5114F7441EBFF159000B3735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFDF0141C2D04B5002B4AF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFDF01B1C2D04B5002B4AF9;
+			remoteInfo = MetroMesh;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5114F7311EBFF13B000B3735 /* MetroMeshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroMeshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5114F7331EBFF13B000B3735 /* MetroMeshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroMeshUITests.swift; sourceTree = "<group>"; };
+		5114F7351EBFF13B000B3735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5114F73F1EBFF159000B3735 /* MetroMeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroMeshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5114F7411EBFF159000B3735 /* MetroMeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroMeshTests.swift; sourceTree = "<group>"; };
+		5114F7431EBFF159000B3735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLoadStations.swift; sourceTree = "<group>"; };
 		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
@@ -72,6 +97,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5114F72E1EBFF13B000B3735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5114F73C1EBFF159000B3735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDFDF0191C2D04B5002B4AF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +129,24 @@
 				EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5114F7321EBFF13B000B3735 /* MetroMeshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5114F7331EBFF13B000B3735 /* MetroMeshUITests.swift */,
+				5114F7351EBFF13B000B3735 /* Info.plist */,
+			);
+			path = MetroMeshUITests;
+			sourceTree = "<group>";
+		};
+		5114F7401EBFF159000B3735 /* MetroMeshTests */ = {
+			isa = PBXGroup;
+			children = (
+				5114F7411EBFF159000B3735 /* MetroMeshTests.swift */,
+				5114F7431EBFF159000B3735 /* Info.plist */,
+			);
+			path = MetroMeshTests;
 			sourceTree = "<group>";
 		};
 		514CD7151E8A1EEF00AF4F52 /* Models */ = {
@@ -219,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				EDFDF01E1C2D04B5002B4AF9 /* MetroMesh */,
+				5114F7321EBFF13B000B3735 /* MetroMeshUITests */,
+				5114F7401EBFF159000B3735 /* MetroMeshTests */,
 				EDFDF01D1C2D04B5002B4AF9 /* Products */,
 				4EB9FAFFF4E82ABC495251B1 /* Pods */,
 				75A6D963847018FE1E70DC27 /* Frameworks */,
@@ -229,6 +288,8 @@
 			isa = PBXGroup;
 			children = (
 				EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */,
+				5114F7311EBFF13B000B3735 /* MetroMeshUITests.xctest */,
+				5114F73F1EBFF159000B3735 /* MetroMeshTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +318,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5114F7301EBFF13B000B3735 /* MetroMeshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5114F7381EBFF13B000B3735 /* Build configuration list for PBXNativeTarget "MetroMeshUITests" */;
+			buildPhases = (
+				5114F72D1EBFF13B000B3735 /* Sources */,
+				5114F72E1EBFF13B000B3735 /* Frameworks */,
+				5114F72F1EBFF13B000B3735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5114F7371EBFF13B000B3735 /* PBXTargetDependency */,
+			);
+			name = MetroMeshUITests;
+			productName = MetroMeshUITests;
+			productReference = 5114F7311EBFF13B000B3735 /* MetroMeshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5114F73E1EBFF159000B3735 /* MetroMeshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5114F7461EBFF159000B3735 /* Build configuration list for PBXNativeTarget "MetroMeshTests" */;
+			buildPhases = (
+				5114F73B1EBFF159000B3735 /* Sources */,
+				5114F73C1EBFF159000B3735 /* Frameworks */,
+				5114F73D1EBFF159000B3735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5114F7451EBFF159000B3735 /* PBXTargetDependency */,
+			);
+			name = MetroMeshTests;
+			productName = MetroMeshTests;
+			productReference = 5114F73F1EBFF159000B3735 /* MetroMeshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EDFDF01B1C2D04B5002B4AF9 /* MetroMesh */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDFDF02E1C2D04B5002B4AF9 /* Build configuration list for PBXNativeTarget "MetroMesh" */;
@@ -284,10 +381,22 @@
 		EDFDF0141C2D04B5002B4AF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Oluwabori Oludemi";
 				TargetAttributes = {
+					5114F7301EBFF13B000B3735 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7B6H8LADVH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDFDF01B1C2D04B5002B4AF9;
+					};
+					5114F73E1EBFF159000B3735 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7B6H8LADVH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDFDF01B1C2D04B5002B4AF9;
+					};
 					EDFDF01B1C2D04B5002B4AF9 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 3FHNAQRUEU;
@@ -315,11 +424,27 @@
 			projectRoot = "";
 			targets = (
 				EDFDF01B1C2D04B5002B4AF9 /* MetroMesh */,
+				5114F7301EBFF13B000B3735 /* MetroMeshUITests */,
+				5114F73E1EBFF159000B3735 /* MetroMeshTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5114F72F1EBFF13B000B3735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5114F73D1EBFF159000B3735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDFDF01A1C2D04B5002B4AF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +521,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5114F72D1EBFF13B000B3735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5114F7341EBFF13B000B3735 /* MetroMeshUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5114F73B1EBFF159000B3735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5114F7421EBFF159000B3735 /* MetroMeshTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDFDF0181C2D04B5002B4AF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +550,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5114F7371EBFF13B000B3735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFDF01B1C2D04B5002B4AF9 /* MetroMesh */;
+			targetProxy = 5114F7361EBFF13B000B3735 /* PBXContainerItemProxy */;
+		};
+		5114F7451EBFF159000B3735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFDF01B1C2D04B5002B4AF9 /* MetroMesh */;
+			targetProxy = 5114F7441EBFF159000B3735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */ = {
@@ -430,6 +584,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5114F7391EBFF13B000B3735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 7B6H8LADVH;
+				INFOPLIST_FILE = MetroMeshUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MetroMesh;
+			};
+			name = Debug;
+		};
+		5114F73A1EBFF13B000B3735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 7B6H8LADVH;
+				INFOPLIST_FILE = MetroMeshUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MetroMesh;
+			};
+			name = Release;
+		};
+		5114F7471EBFF159000B3735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 7B6H8LADVH;
+				INFOPLIST_FILE = MetroMeshTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetroMesh.app/MetroMesh";
+			};
+			name = Debug;
+		};
+		5114F7481EBFF159000B3735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = 7B6H8LADVH;
+				INFOPLIST_FILE = MetroMeshTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.borikanes.MetroMeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetroMesh.app/MetroMesh";
+			};
+			name = Release;
+		};
 		EDFDF02C1C2D04B5002B4AF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -559,6 +785,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5114F7381EBFF13B000B3735 /* Build configuration list for PBXNativeTarget "MetroMeshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5114F7391EBFF13B000B3735 /* Debug */,
+				5114F73A1EBFF13B000B3735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5114F7461EBFF159000B3735 /* Build configuration list for PBXNativeTarget "MetroMeshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5114F7471EBFF159000B3735 /* Debug */,
+				5114F7481EBFF159000B3735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EDFDF0171C2D04B5002B4AF9 /* Build configuration list for PBXProject "MetroMesh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
