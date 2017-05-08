@@ -12,7 +12,6 @@ included: # paths to include during linting. `--path` is ignored if present.
   - View/Customs
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
-
 # configurable rules can be customized from this configuration file
 # binary rules can set their severity level
 force_cast: warning # implicitly

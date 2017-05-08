@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct MetroStations {
+struct MetroStation {
 
     enum MetroLines: String {
         case redColor = "RD"
@@ -30,14 +30,14 @@ struct MetroStations {
     var lines = [MetroLines]()
     let address: MetroLocation?
     var region: CLCircularRegion?
-    var radius = 804.67 {
+    var radius = 200.0 {
         didSet {
             if let addr = address {
                 let addressIn2D = CLLocationCoordinate2D(
                     latitude: addr.latitude , longitude: addr.longitude)
                 region = CLCircularRegion(center: addressIn2D, radius: radius, identifier: name)
                 region?.notifyOnEntry = true
-                region?.notifyOnExit = false
+                region?.notifyOnExit = true
             }
         }
     }
@@ -60,27 +60,27 @@ struct MetroStations {
         //Find an auto way to do the radius calculation
         region = CLCircularRegion(center: addressIn2D, radius: radius, identifier: name)
         region?.notifyOnEntry = true
-        region?.notifyOnExit = false
+        region?.notifyOnExit = true
 
         if let line1 = lineCode1 {
-            self.lines.append(MetroStations.MetroLines(rawValue: line1)!)
+            self.lines.append(MetroStation.MetroLines(rawValue: line1)!)
         }
 
         if let line2 = json["LineCode2"] as? String? {
             if let line2 = line2 {
-                self.lines.append(MetroStations.MetroLines(rawValue: line2)!)
+                self.lines.append(MetroStation.MetroLines(rawValue: line2)!)
             }
         }
 
         if let line3 = json["LineCode3"] as? String? {
             if let line3 = line3 {
-                self.lines.append(MetroStations.MetroLines(rawValue: line3)!)
+                self.lines.append(MetroStation.MetroLines(rawValue: line3)!)
             }
         }
 
         if let line4 = json["LineCode4"] as? String? {
             if let line4 = line4 {
-                self.lines.append(MetroStations.MetroLines(rawValue: line4)!)
+                self.lines.append(MetroStation.MetroLines(rawValue: line4)!)
             }
         }
     }
