@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPO-pl-Jtk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MMViewController" customModule="MetroMesh" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,9 +47,47 @@
                             <constraint firstItem="aBd-4a-sE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z2V-iC-uOe"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="4sw-Pz-pDR"/>
                     <navigationItem key="navigationItem" id="EfJ-CR-E66"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="-54"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Z2X-XO-5Nr">
+            <objects>
+                <viewController id="TkR-lD-S0g" customClass="StationListViewController" customModule="MetroMesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H8l-fJ-aNs"/>
+                        <viewControllerLayoutGuide type="bottom" id="x6j-ji-xdf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0jc-8m-RpJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yNg-oq-oFD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd6-6M-Ao3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="663"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jrh-rQ-bmz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fPO-pl-Jtk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6oK-Xm-cY8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UXI-ro-GTj"/>
+                        <segue destination="TkR-lD-S0g" kind="relationship" relationship="viewControllers" id="Sl5-L2-Q8L"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayY-nN-EOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.8" y="383.65817091454278"/>
         </scene>

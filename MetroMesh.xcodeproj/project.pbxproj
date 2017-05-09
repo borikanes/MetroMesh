@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5114F7341EBFF13B000B3735 /* MetroMeshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114F7331EBFF13B000B3735 /* MetroMeshUITests.swift */; };
 		5114F7421EBFF159000B3735 /* MetroMeshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114F7411EBFF159000B3735 /* MetroMeshTests.swift */; };
+		5114F74B1EC177BC000B3735 /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114F74A1EC177BC000B3735 /* StationListViewController.swift */; };
 		514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */; };
 		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
 		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
@@ -46,6 +47,7 @@
 		5114F73F1EBFF159000B3735 /* MetroMeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroMeshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5114F7411EBFF159000B3735 /* MetroMeshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroMeshTests.swift; sourceTree = "<group>"; };
 		5114F7431EBFF159000B3735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5114F74A1EC177BC000B3735 /* StationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
 		514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLoadStations.swift; sourceTree = "<group>"; };
 		514CD7131E862D1F00AF4F52 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		514CD7161E8A1F0800AF4F52 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = MetroMeshTests;
 			sourceTree = "<group>";
 		};
+		5114F7491EC176CD000B3735 /* StationViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5114F74A1EC177BC000B3735 /* StationListViewController.swift */,
+			);
+			path = StationViewGroup;
+			sourceTree = "<group>";
+		};
 		514CD7151E8A1EEF00AF4F52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +240,7 @@
 		ED87465A1C501BC700B26BFE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5114F7491EC176CD000B3735 /* StationViewGroup */,
 				ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */,
 			);
 			name = Controller;
@@ -546,6 +557,7 @@
 				514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */,
 				514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
+				5114F74B1EC177BC000B3735 /* StationListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +804,7 @@
 				5114F73A1EBFF13B000B3735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5114F7461EBFF159000B3735 /* Build configuration list for PBXNativeTarget "MetroMeshTests" */ = {
 			isa = XCConfigurationList;
@@ -800,6 +813,7 @@
 				5114F7481EBFF159000B3735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDFDF0171C2D04B5002B4AF9 /* Build configuration list for PBXProject "MetroMesh" */ = {
 			isa = XCConfigurationList;
