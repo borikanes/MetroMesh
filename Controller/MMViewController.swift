@@ -102,8 +102,9 @@ class MMViewController: UIViewController {
 }
 
 /**
- CLLocation delegates
+ CLLocation delegate methods
  */
+// MARK: CLLocationManagerDelegate extension
 extension MMViewController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

@@ -15,6 +15,7 @@
 		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
+		EDEAEA0B1EC4280100ACFF89 /* StationTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEAEA091EC4280100ACFF89 /* StationTable.storyboard */; };
 		EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */; };
 		EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */; };
 		EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFDF0261C2D04B5002B4AF9 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		EC37A536F96B397DBA26C035 /* Pods-MetroMesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetroMesh.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetroMesh/Pods-MetroMesh.release.xcconfig"; sourceTree = "<group>"; };
 		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
 		ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
+		EDEAEA0A1EC4280100ACFF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StationTable.storyboard; sourceTree = "<group>"; };
 		EDFDF01C1C2D04B5002B4AF9 /* MetroMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFDF01F1C2D04B5002B4AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFDF0241C2D04B5002B4AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			children = (
 				EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */,
 				EDFDF0281C2D04B5002B4AF9 /* LaunchScreen.storyboard */,
+				EDEAEA091EC4280100ACFF89 /* StationTable.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			files = (
 				EDFDF02A1C2D04B5002B4AF9 /* LaunchScreen.storyboard in Resources */,
 				EDFDF0351C2E47F9002B4AF9 /* MetroMesh appLogo.png in Resources */,
+				EDEAEA0B1EC4280100ACFF89 /* StationTable.storyboard in Resources */,
 				EDFDF0271C2D04B5002B4AF9 /* Assets.xcassets in Resources */,
 				EDFDF0251C2D04B5002B4AF9 /* Main.storyboard in Resources */,
 				514CD7141E862D1F00AF4F52 /* stations.json in Resources */,
@@ -577,6 +581,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EDEAEA091EC4280100ACFF89 /* StationTable.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEAEA0A1EC4280100ACFF89 /* Base */,
+			);
+			name = StationTable.storyboard;
+			sourceTree = "<group>";
+		};
 		EDFDF0231C2D04B5002B4AF9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
