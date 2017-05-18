@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPO-pl-Jtk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPO-pl-Jtk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ProximaNova-Regular.ttf">
+        <array key="ProximaNova-Reg.otf">
             <string>ProximaNova-Regular</string>
         </array>
     </customFonts>
@@ -66,22 +66,59 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UXI-ro-GTj"/>
-                        <segue destination="AqW-xd-KgB" kind="relationship" relationship="viewControllers" id="MIK-zG-yVZ"/>
+                        <segue destination="dkL-Ik-kfm" kind="relationship" relationship="viewControllers" id="xpt-Kc-5bt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayY-nN-EOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.8" y="383.65817091454278"/>
         </scene>
-        <!--StationTable-->
-        <scene sceneID="ySA-hE-ZIZ">
+        <!--View Controller-->
+        <scene sceneID="7o0-YR-q32">
             <objects>
-                <viewControllerPlaceholder storyboardName="StationTable" referencedIdentifier="StationTable" id="AqW-xd-KgB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KII-gR-rLz"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T8B-YS-QO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="PjW-eo-XGQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aoJ-im-pJF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uwk-EX-hhH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y01-U7-vm7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yow-nh-Q5d">
+                        <connections>
+                            <outlet property="titleView" destination="voW-5c-nf8" id="xSn-bK-27n"/>
+                        </connections>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npf-fb-V19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" id="voW-5c-nf8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </objects>
-            <point key="canvasLocation" x="2153" y="587"/>
+            <point key="canvasLocation" x="3282" y="834"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5h4-3A-IRx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dkL-Ik-kfm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="adt-B3-A5i"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="32D-VJ-XDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PjW-eo-XGQ" kind="relationship" relationship="rootViewController" id="Qc9-eB-4RU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjZ-AL-hFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="835"/>
         </scene>
     </scenes>
 </document>
