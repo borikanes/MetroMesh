@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1264.8" y="383.65817091454278"/>
         </scene>
-        <!--View Controller-->
+        <!--Station List View Controller-->
         <scene sceneID="7o0-YR-q32">
             <objects>
-                <viewController id="PjW-eo-XGQ" sceneMemberID="viewController">
+                <viewController id="PjW-eo-XGQ" customClass="StationListViewController" customModule="MetroMesh" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aoJ-im-pJF"/>
                         <viewControllerLayoutGuide type="bottom" id="Uwk-EX-hhH"/>
@@ -93,10 +93,10 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npf-fb-V19" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchBar contentMode="redraw" id="voW-5c-nf8">
+                <searchBar contentMode="redraw" placeholder="Find a station" showsCancelButton="YES" id="voW-5c-nf8">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
                 </searchBar>
             </objects>
             <point key="canvasLocation" x="3282" y="834"/>
@@ -107,7 +107,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dkL-Ik-kfm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="adt-B3-A5i"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="32D-VJ-XDC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="32D-VJ-XDC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
