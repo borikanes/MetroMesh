@@ -10,10 +10,25 @@ import UIKit
 
 class StationListViewController: UIViewController {
 
+    var metroStations = MMLoadStations.sharedInstance.getStations()
+    var stationNames = [String]()
+    let cellIdentifier = "stationCell"
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTableViewData()
+    }
+
+    fileprivate func setupTableViewData() {
+        guard let stationNames = metroStations else {
+            // swiftlint:disable todo
+            // TODO: return error here
+            return
+        }
+
+        self.stationNames = stationNames.map { return $0.name }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,4 +46,29 @@ class StationListViewController: UIViewController {
     }
     */
 
+}
+
+extension StationListViewController: UITableViewDelegate {
+
+}
+
+extension StationListViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return stationNames.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // swiftlint:disable force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier,
+                                                 for: indexPath) as! StationTableViewCell
+        cell.stationNameLabel.text = stationNames[indexPath.row]
+        
+        return cell
+    }
 }
