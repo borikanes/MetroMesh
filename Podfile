@@ -3,7 +3,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 def main_pods
-    pod 'Alamofire', '~> 4.4'
+#    pod 'Alamofire', '~> 4.4'
 end 
 
 target 'MetroMesh' do
