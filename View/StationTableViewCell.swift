@@ -12,13 +12,18 @@ class StationTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stationNameLabel: UILabel!
     
+    @IBOutlet weak var firstColorImage: UIImageView!
+    @IBOutlet weak var secondColorImage: UIImageView!
+    @IBOutlet weak var thirdColorImage: UIImageView!
+    @IBOutlet weak var fourthColorImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         setupCellView()
     }
     
-    fileprivate func setupCellView() {
+    private func setupCellView() {
         
     }
 

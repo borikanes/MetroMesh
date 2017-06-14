@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -96,33 +97,60 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuS-IE-cJV">
-                                                    <rect key="frame" x="8" y="8" width="232" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuS-IE-cJV">
+                                                    <rect key="frame" x="8" y="14.5" width="224" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FG6-qE-frz">
-                                                    <rect key="frame" x="277" y="13" width="25" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSx-2r-GEt">
-                                                    <rect key="frame" x="253" y="13" width="25" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qiF-ek-2kz">
-                                                    <rect key="frame" x="227" y="13" width="25" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-vV-GdS">
-                                                    <rect key="frame" x="202" y="13" width="25" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-si-Ow5">
+                                                    <rect key="frame" x="234" y="13" width="100" height="25"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-vV-GdS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="A8q-qL-h6F"/>
+                                                                <constraint firstAttribute="width" constant="25" id="nTn-P5-s2F"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qiF-ek-2kz">
+                                                            <rect key="frame" x="25" y="0.0" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="0ia-hI-gIT"/>
+                                                                <constraint firstAttribute="width" constant="25" id="VVA-gE-WQG"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JSx-2r-GEt">
+                                                            <rect key="frame" x="50" y="0.0" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="25" id="39h-KX-ijV"/>
+                                                                <constraint firstAttribute="height" constant="25" id="cMc-8O-X2z"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FG6-qE-frz">
+                                                            <rect key="frame" x="75" y="0.0" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="25" id="RaD-80-Ilp"/>
+                                                                <constraint firstAttribute="height" constant="25" id="TDa-pH-0DJ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0rQ-si-Ow5" firstAttribute="centerY" secondItem="IW0-pA-l1S" secondAttribute="centerY" id="5PR-TM-WRy"/>
+                                                <constraint firstAttribute="trailing" secondItem="0rQ-si-Ow5" secondAttribute="trailing" constant="8" id="L8b-JY-yx7"/>
+                                                <constraint firstItem="uuS-IE-cJV" firstAttribute="leading" secondItem="IW0-pA-l1S" secondAttribute="leadingMargin" id="WOr-4a-mBG"/>
+                                                <constraint firstItem="0rQ-si-Ow5" firstAttribute="leading" secondItem="uuS-IE-cJV" secondAttribute="trailing" constant="2" id="l7M-O7-2sK"/>
+                                                <constraint firstItem="uuS-IE-cJV" firstAttribute="centerY" secondItem="IW0-pA-l1S" secondAttribute="centerY" id="xDD-kc-fQy"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="firstColorImage" destination="uP0-vV-GdS" id="8eJ-Cm-0nt"/>
+                                            <outlet property="fourthColorImage" destination="FG6-qE-frz" id="Ea9-58-sMY"/>
+                                            <outlet property="secondColorImage" destination="qiF-ek-2kz" id="zdT-pF-aY4"/>
                                             <outlet property="stationNameLabel" destination="uuS-IE-cJV" id="rsx-We-K10"/>
+                                            <outlet property="thirdColorImage" destination="JSx-2r-GEt" id="3ey-oN-rFz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
