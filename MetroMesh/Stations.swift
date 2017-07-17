@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct MetroLocation: Codable {
+struct MetroLocation {
     let latitude: Double
     let longitude: Double
 }
@@ -33,7 +33,7 @@ struct MetroStation {
         }
     }
 
-    enum MetroLines: String, Codable {
+    enum MetroLines: String {
         case redLine = "RD"
         case blueLine = "BL"
         case yellowLine = "YL"

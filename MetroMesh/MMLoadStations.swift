@@ -23,6 +23,8 @@ class MMLoadStations {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                 let decoder = JSONDecoder()
                 let masterStationArray = try decoder.decode(MasterJson.self, from: data)
+                
+                // Actual stations array
                 let stationArray = masterStationArray.stations
                 completeStationArray = stationArray.map({MetroStation(json: $0)!})
             } catch let error {

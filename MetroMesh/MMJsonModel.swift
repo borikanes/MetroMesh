@@ -57,27 +57,3 @@ struct MasterJson: Decodable {
         case stations = "Stations"
     }
 }
-
-struct Station {
-    var name: String?
-    var code: String?
-    var line1: String?
-    var line2: String?
-    var line3: String?
-    var line4: String?
-    var latitude: Double?
-    var longitude: Double?
-}
-
-extension Station {
-    init(from master: MasterJson.StationData) {
-        name = master.name
-        code = master.code
-        line1 = master.line1
-        line2 = master.line2
-        line3 = master.line3
-        line4 = master.line4
-        latitude = master.latitude
-        longitude = master.longitude
-    }
-}
