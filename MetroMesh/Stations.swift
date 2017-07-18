@@ -9,21 +9,12 @@
 import Foundation
 import CoreLocation
 
+struct MetroLocation {
+    let latitude: Double
+    let longitude: Double
+}
+
 struct MetroStation {
-
-    enum MetroLines: String {
-        case redColor = "RD"
-        case blue = "BL"
-        case yellow = "YL"
-        case orange = "OR"
-        case silver = "SV"
-        case green = "GR"
-    }
-
-    struct MetroLocation {
-        let latitude: Double
-        let longitude: Double
-    }
 
     let name: String
     let code: String
@@ -42,15 +33,26 @@ struct MetroStation {
         }
     }
 
-    init?(json: [String: Any]) {
-        guard let code = json["Code"] as? String,
-            let name = json["Name"] as? String,
-            let latitude = json["Lat"] as? Double,
-            let longitude = json["Lon"] as? Double,
-            let lineCode1 = json["LineCode1"] as? String? else {
+    enum MetroLines: String {
+        case redLine = "RD"
+        case blueLine = "BL"
+        case yellowLine = "YL"
+        case orangeLine = "OR"
+        case silverLine = "SV"
+        case greenLine = "GR"
+    }
+}
+
+extension MetroStation {
+    init?(json: MasterJson.StationData) {
+
+        guard let code = json.code, let name = json.name,
+            let latitude = json.latitude, let longitude = json.longitude,
+            let line1 = json.line1 else {
                 debugPrint("Parsing json failed in init for MetroStations")
                 return nil
         }
+
         let addressIn2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
         self.code = code
@@ -62,27 +64,23 @@ struct MetroStation {
         region?.notifyOnEntry = true
         region?.notifyOnExit = true
 
-        if let line1 = lineCode1 {
-            self.lines.append(MetroStation.MetroLines(rawValue: line1)!)
-        }
+        // At this point line1 exists because it passed the guard statement above
+        // swiftlint:disable force_unwrapping
+        self.lines.append(MetroStation.MetroLines(rawValue: line1)!)
 
-        if let line2 = json["LineCode2"] as? String? {
-            if let line2 = line2 {
-                self.lines.append(MetroStation.MetroLines(rawValue: line2)!)
-            }
+        if let line2 = json.line2 {
+            // swiftlint:disable force_unwrapping
+            self.lines.append(MetroStation.MetroLines(rawValue: line2)!)
         }
-
-        if let line3 = json["LineCode3"] as? String? {
-            if let line3 = line3 {
-                self.lines.append(MetroStation.MetroLines(rawValue: line3)!)
-            }
+        
+        if let line3 = json.line3 {
+            // swiftlint:disable force_unwrapping
+            self.lines.append(MetroStation.MetroLines(rawValue: line3)!)
         }
-
-        if let line4 = json["LineCode4"] as? String? {
-            if let line4 = line4 {
-                self.lines.append(MetroStation.MetroLines(rawValue: line4)!)
-            }
+        
+        if let line4 = json.line4 {
+            // swiftlint:disable force_unwrapping
+            self.lines.append(MetroStation.MetroLines(rawValue: line4)!)
         }
     }
-
 }

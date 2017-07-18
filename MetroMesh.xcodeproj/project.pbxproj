@@ -52,6 +52,7 @@
 		514046041EB2E91C00E4C2C7 /* MMLoadStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */; };
 		514CD7141E862D1F00AF4F52 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 514CD7131E862D1F00AF4F52 /* stations.json */; };
 		514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514CD7161E8A1F0800AF4F52 /* Stations.swift */; };
+		51D0892E1F0279660020C220 /* MMJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D0892D1F0279660020C220 /* MMJsonModel.swift */; };
 		ED87465D1C56A57000B26BFE /* MMeshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87465C1C56A57000B26BFE /* MMeshButton.swift */; };
 		ED8FC9221E41A9E600CD7B91 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */; };
 		EDEAEA0B1EC4280100ACFF89 /* StationTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEAEA091EC4280100ACFF89 /* StationTable.storyboard */; };
@@ -130,6 +131,7 @@
 		51ABC8CF1E7E0440008FC57B /* ProximaNovaCond-ThinIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-ThinIt.otf"; sourceTree = "<group>"; };
 		51ABC8D01E7E0440008FC57B /* ProximaNovaCond-Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Xbold.otf"; sourceTree = "<group>"; };
 		51ABC8D11E7E0440008FC57B /* ProximaNovaCond-XboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-XboldIt.otf"; sourceTree = "<group>"; };
+		51D0892D1F0279660020C220 /* MMJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMJsonModel.swift; sourceTree = "<group>"; };
 		ED87465C1C56A57000B26BFE /* MMeshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMeshButton.swift; sourceTree = "<group>"; };
 		ED8FC9211E41A9E600CD7B91 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		EDEAEA0A1EC4280100ACFF89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StationTable.storyboard; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				514CD7161E8A1F0800AF4F52 /* Stations.swift */,
 				514046031EB2E91C00E4C2C7 /* MMLoadStations.swift */,
+				51D0892D1F0279660020C220 /* MMJsonModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				514CD7171E8A1F0800AF4F52 /* Stations.swift in Sources */,
 				EDFDF0201C2D04B5002B4AF9 /* AppDelegate.swift in Sources */,
 				5114F74B1EC177BC000B3735 /* StationListViewController.swift in Sources */,
+				51D0892E1F0279660020C220 /* MMJsonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
