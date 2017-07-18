@@ -65,17 +65,21 @@ extension MetroStation {
         region?.notifyOnExit = true
 
         // At this point line1 exists because it passed the guard statement above
+        // swiftlint:disable force_unwrapping
         self.lines.append(MetroStation.MetroLines(rawValue: line1)!)
 
         if let line2 = json.line2 {
+            // swiftlint:disable force_unwrapping
             self.lines.append(MetroStation.MetroLines(rawValue: line2)!)
         }
         
         if let line3 = json.line3 {
+            // swiftlint:disable force_unwrapping
             self.lines.append(MetroStation.MetroLines(rawValue: line3)!)
         }
         
         if let line4 = json.line4 {
+            // swiftlint:disable force_unwrapping
             self.lines.append(MetroStation.MetroLines(rawValue: line4)!)
         }
     }

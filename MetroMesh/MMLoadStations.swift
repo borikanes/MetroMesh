@@ -26,6 +26,7 @@ class MMLoadStations {
                 
                 // Actual stations array
                 let stationArray = masterStationArray.stations
+                // swiftlint:disable force_unwrapping
                 completeStationArray = stationArray.map({MetroStation(json: $0)!})
             } catch let error {
                 print(error.localizedDescription)

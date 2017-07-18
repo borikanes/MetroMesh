@@ -65,6 +65,7 @@ class MMViewController: UIViewController {
         }
 
         let regionsArray = metro_stations.map {
+            // swiftlint:disable force_unwrapping
             return $0.region!
         }
 
